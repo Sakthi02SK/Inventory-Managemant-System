@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Items</title>
+    <link rel = "stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <label>Inventory Managemant System</label>
+        <button onclick = "overview()">Overview</button>
+        <button onclick = "transfer()">Tranfer</button>
+        <button onclick="edit()">Edit</button>
+        <button onclick="history()">History</button>
+    </nav>
+    <label class = "transname">Add Item</label>
+    <div class="transdiv">
+        <label for="proname">Product Name :</label>
+        <input type="text" id = "proname">
+    </div>
+    <div class="transdiv">
+        <label for="proloc">Product Location :</label>
+        <input type="text" id = "proloc">
+    </div>
+    <div class="transdiv">
+        <label for="proqty">Product Quantity :</label>
+        <input type="text" id = "proqty">
+    </div>
+    <div class="transdiv">
+        <button onclick = "addpro()">Add Item</button>
+    </div>
+    <script src = "JS.js"></script>
+</body>
+</html>

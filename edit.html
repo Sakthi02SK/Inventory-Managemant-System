@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <label>Inventory Managemant System</label>
+        <button onclick = "overview()">Over View</button>
+        <button onclick = "transfer()">Tranfer</button>
+        <button onclick="additem()">Add Item</button>
+        <button onclick = "history()">History</button>
+    </nav>
+    <label class = "transname">Edit Items</label>
+    <div class="transdiv">
+        <label for="mySelect">Select an Product : </label>
+        <select id="mySelect">  
+        </select>
+    </div>
+    <div class="transdiv">
+        <label for="loc">Edit location : </label>
+        <input type="text" id = "loc">
+    </div>
+    <div class="transdiv">
+        <label for="editqty">Edit Quantity :</label>
+        <input type="text" id = "editqty">
+    </div>
+    <div class="transdiv">
+        <button onclick = "edititem()">Edit</button>
+    </div>
+    <div class="transdiv">
+        <button onclick = "deleteitem()">Delete</button>
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>
